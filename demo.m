@@ -14,11 +14,12 @@ K_dim = 4;
 
 % select top ranked predicted genes
 [~,ind_gene] = sort(Mutation_Score,'descend');
-PredictedGenes = GeneSymbol_net(ind_gene(1:500));
-SubgroupSp_indices = SubgroupSpec(ind_gene(1:500),:);
+Predicted_Driver_Genes = GeneSymbol_net(ind_gene(1:500));
+SubgroupSp_Predicted_Genes = SubgroupSpec(ind_gene(1:500),:);
 
 % save results
 DirOut = './Output';
 mkdir(DirOut);
 save([DirOut '/result_' input_data_option{select_data} '.mat'],...
-    'Mutation_Score','SubgroupSpec','PredictedGenes','SubgroupSp_indices');
+    'Mutation_Score','SubgroupSpec','Predicted_Driver_Genes',...
+    'SubgroupSp_Predicted_Genes');
