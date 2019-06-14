@@ -43,5 +43,7 @@ The variable `SubgroupSp_Predicted_Genes` contains the indications of subgroup s
 References
 ------------------------
 [1] Cancer Genome Atlas Network and others (2012). Comprehensive molecular portraits of human breast tumours. Nature, 490(7418), 61.
+
 [2] Cancer Genome Atlas Research Network and others (2014). Comprehensive molecular characterization of urothelial bladder carcinoma. Nature, 507(7492), 315.
+
 [3] Gao, J., Aksoy, B. A., Dogrusoz, U., Dresdner, G., Gross, B., Sumer, S. O., Sun, Y., Jacobsen, A., Sinha, R., Larsson, E., et al. (2013). Integrative analysis of complex cancer genomics and clinical profiles using the cbioportal. Sci. Signal, 6(269), pl1¨Cpl1.
