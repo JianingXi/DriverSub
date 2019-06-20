@@ -16,7 +16,7 @@ Requirement
 Input data
 ------------------------
 mutation matrix of a cohort of cancer samples
-The files `./InputData/D01_brca.mat` and `./InputData/D02_blca.mat` contain the TCGA somatic mutation data matrix of breast cancers (BRCA) [1] and bladder cancers (BLCA) [x], which are downloaded from [cBioPortal](http://www.cbioportal.org/data_sets.jsp) [3].
+The files `./InputData/D01_brca.mat` and `./InputData/D02_blca.mat` contain the TCGA somatic mutation data matrix of breast cancers (BRCA) [1] and bladder cancers (BLCA) [2], which are downloaded from [cBioPortal](http://www.cbioportal.org/data_sets.jsp) [3].
 
 run DriverSub
 ------------------------
@@ -46,4 +46,4 @@ References
 
 [2] Cancer Genome Atlas Research Network and others (2014). Comprehensive molecular characterization of urothelial bladder carcinoma. Nature, 507(7492), 315.
 
-[3] Gao, J., Aksoy, B. A., Dogrusoz, U., Dresdner, G., Gross, B., Sumer, S. O., Sun, Y., Jacobsen, A., Sinha, R., Larsson, E., et al. (2013). Integrative analysis of complex cancer genomics and clinical profiles using the cbioportal. Sci. Signal, 6(269), pl1¨Cpl1.
+[3] Gao, J., Aksoy, B. A., Dogrusoz, U., Dresdner, G., Gross, B., Sumer, S. O., Sun, Y., Jacobsen, A., Sinha, R., Larsson, E., et al. (2013). Integrative analysis of complex cancer genomics and clinical profiles using the cbioportal. Sci. Signal, 6(269), pl1Â¨Cpl1.
