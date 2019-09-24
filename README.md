@@ -4,7 +4,11 @@ Inferring subgroup specific driver genes from heterogeneous cancer samples via s
 
 ![image](https://github.com/JianingXi/DriverSub/blob/master/bin/splash.jpg)
 
-Developer: Jianing Xi <xjn@mail.ustc.edu.cn> from School of Mechanical Engineering and Center for OPTical IMagery Analysis and Learning (OPTIMAL), Northwestern Polytechnical University, China
+Developer: Jianing Xi <xjn@mail.ustc.edu.cn>
+
+School of Mechanical Engineering and Center for OPTical IMagery Analysis and Learning (OPTIMAL),
+
+Northwestern Polytechnical University, China
 
 ## Instructions to DriverSub (version 1.0.0)
 
@@ -13,7 +17,7 @@ Requirement
 * 4GB memory
 * MATLAB R2015a or later
 
-Input data
+Input data Generation
 ------------------------
 mutation matrix of a cohort of cancer samples
 
@@ -37,11 +41,11 @@ generate the mutation matrix of BRCA and BLCA as `./InputData/D01_brca.mat` and 
 Subgroup specific driver gene analysis by DriverSub
 ------------------------
 
-### Run DriverSub
+### 1. Run DriverSub
 
 To apply DriverSub, please run the Matlab script file `./demo.m` and the results will be automatically saved in file `./Output/result_[cancer_file_name].mat` after the program is finished.
 
-### Input Arguments
+### 2. Input Arguments
 
 * `X_mat`: the mutation matrix of cancer samples (sample x gene);
 * `K_dim`: the number of subgroups, predefined by users;
@@ -51,28 +55,21 @@ To apply DriverSub, please run the Matlab script file `./demo.m` and the results
 * `W_init`: the user-defined random initialization of matrix W, and the function will generates a random matrix if `W_init` is not included.
 
 
-Output variables
-------------------------
+### 3. Output variables
 In file `./output/result_[cancer_name].mat`, there are four output variables:
 
-* 1. `Mutation_Score`
-Since the distances between the output vectors and the origin of the subspace can be used to discriminate driver genes, DriverSub gives the normalized mutation scores for the investigated genes through the output variable `Mutation_Score`.
+* `Mutation_Score`: since the distances between the output vectors and the origin of the subspace can be used to discriminate driver genes, DriverSub gives the normalized mutation scores for the investigated genes through the output variable `Mutation_Score`.
 
-* 2. `SubgroupSpec`
-Since the coordinate values in different dimensions of the vectors can indicate the subgroups specificities of the related genes, DriverSub also yields the subgroup indices of the investigated genes through the output variable `SubgroupSpec`.
+* `SubgroupSpec`: since the coordinate values in different dimensions of the vectors can indicate the subgroups specificities of the related genes, DriverSub also yields the subgroup indices of the investigated genes through the output variable `SubgroupSpec`.
 
 
-* 3. `Predicted_Driver_Genes`
-The variable `Predicted_Driver_Genes` contains the predicted driver genes, which are selected as the top 500 ranked genes, according to their `Mutation_Score`.
+* `Predicted_Driver_Genes`: the variable `Predicted_Driver_Genes` contains the predicted driver genes, which are selected as the top 500 ranked genes, according to their `Mutation_Score`.
 
-* 4. `SubgroupSp_Predicted_Genes`
-The variable `SubgroupSp_Predicted_Genes` contains the indications of subgroup specificities of the top 500 predicted genes, according to the variable `SubgroupSpec`.
+* `SubgroupSp_Predicted_Genes`: the variable `SubgroupSp_Predicted_Genes` contains the indications of subgroup specificities of the top 500 predicted genes, according to the variable `SubgroupSpec`.
 
-* 5. `Z_mat`
-The variable `Z_mat` contains the output vectors of the investigated genes and the coordinate values can represent the mutation profiles among samples, formed as matrix format.
+* `Z_mat`: the variable `Z_mat` contains the output vectors of the investigated genes and the coordinate values can represent the mutation profiles among samples, formed as matrix format.
 
-* 6. `W_mat`
-The variable `W_mat` contains the parameters of the subspace learning and can be used to indicate subgroup samples, formed as matrix format.
+* `W_mat`: the variable `W_mat` contains the parameters of the subspace learning and can be used to indicate subgroup samples, formed as matrix format.
 
 
 Subgroup Prediction Assessment
