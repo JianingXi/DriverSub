@@ -47,23 +47,23 @@ Output variables
 ------------------------
 In file `./output/result_[cancer_name].mat`, there are four output variables:
 
-1. `Mutation_Score`
+* 1. `Mutation_Score`
 Since the distances between the output vectors and the origin of the subspace can be used to discriminate driver genes, DriverSub gives the normalized mutation scores for the investigated genes through the output variable `Mutation_Score`.
 
-2. `SubgroupSpec`
+* 2. `SubgroupSpec`
 Since the coordinate values in different dimensions of the vectors can indicate the subgroups specificities of the related genes, DriverSub also yields the subgroup indices of the investigated genes through the output variable `SubgroupSpec`.
 
 
-3. `Predicted_Driver_Genes`
+* 3. `Predicted_Driver_Genes`
 The variable `Predicted_Driver_Genes` contains the predicted driver genes, which are selected as the top 500 ranked genes, according to their `Mutation_Score`.
 
-4. `SubgroupSp_Predicted_Genes`
+* 4. `SubgroupSp_Predicted_Genes`
 The variable `SubgroupSp_Predicted_Genes` contains the indications of subgroup specificities of the top 500 predicted genes, according to the variable `SubgroupSpec`.
 
-5. `Z_mat`
+* 5. `Z_mat`
 The variable `Z_mat` contains the output vectors of the investigated genes and the coordinate values can represent the mutation profiles among samples, formed as matrix format.
 
-6. `W_mat`
+* 6. `W_mat`
 The variable `W_mat` contains the parameters of the subspace learning and can be used to indicate subgroup samples, formed as matrix format.
 
 
@@ -73,6 +73,8 @@ Subgroup Prediction Assessment
 Expect that the subgroup annotations for bladder cancer is not available, we have collected the available subgroup annotations for breast cancer from [UCSC Xena](https://xenabrowser.net/) in file `./SubgroupAnnotations/GT01_brca.mat`, as the ground truth in respect to data file `./InputData/D01_brca.mat`.
 
 The script file `./SubgroupAssessment.m` is used to assess subgroup prediction performance. It will automatically draw the figure of association between the inferrd subgroups and the subgroup annotations, which is saved as `Fig_SubgroupAssessment.png`.
+
+![image](https://github.com/JianingXi/DriverSub/blob/master/bin/Fig_SubgroupAssessment.png)
 
 
 References
