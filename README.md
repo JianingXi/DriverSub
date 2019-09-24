@@ -19,9 +19,8 @@ Requirement
 
 Input data Generation
 ------------------------
-mutation matrix of a cohort of cancer samples
 
-The script `./GenerateInputData.m` can generate input data file from raw data download from [cBioPortal database](http://www.cbioportal.org/data_sets.jsp) [1].
+The script `./GenerateInputData.m` can generate input data file from raw data, where the mutations of a cohort of cancer samples are download from [cBioPortal database](http://www.cbioportal.org/data_sets.jsp) [1].
 
 ### 1. Loading raw data of mutations
 
