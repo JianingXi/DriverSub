@@ -23,7 +23,7 @@ The script `./GenerateInputData.m` can generate input data file from raw data do
 
 Here we have provided raw data of TCGA somatic mutations of two cancer types, breast cancers (BRCA) [2] and bladder cancers (BLCA) [3], downloaded from cBioPortal [1], which are located at:
 
-* `./cBioPortal_RawData/brca_tcga_pub/data_mutations_extended.txt` and
+* `./cBioPortal_RawData/brca_tcga_pub/data_mutations_extended.txt`,
 * `./cBioPortal_RawData/blca_tcga_pub/data_mutations_extended.txt`.
 
 Through the script `./GenerateInputData.m` with function `./bin/P01_LoadRawMut.m`, the raw data can be loaded into Matlab Workspace.
@@ -34,8 +34,11 @@ After the raw data are loaded, the script `./GenerateInputData.m` with function 
 generate the mutation matrix of BRCA and BLCA as `./InputData/D01_brca.mat` and `./InputData/D02_blca.mat`. The two generated `.mat` files are the input data of DriverSub.
 
 
-Run DriverSub
+Subgroup specific driver gene analysis by DriverSub
 ------------------------
+
+### Run DriverSub
+
 To apply DriverSub, please run the Matlab script file `./demo.m` and the results will be automatically saved in file `./Output/result_[cancer_file_name].mat` after the program is finished.
 
 ### Input Arguments
