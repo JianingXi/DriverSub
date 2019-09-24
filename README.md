@@ -21,7 +21,10 @@ The script `./GenerateInputData.m` can generate input data file from raw data do
 
 ### 1. Loading raw data of mutations
 
-Here we have provided raw data of TCGA somatic mutations of two cancer types, breast cancers (BRCA) [2] and bladder cancers (BLCA) [3], downloaded from cBioPortal [1], which are located at `./cBioPortal_RawData/brca_tcga_pub/data_mutations_extended.txt` and `./cBioPortal_RawData/blca_tcga_pub/data_mutations_extended.txt`. Through the script `./GenerateInputData.m` with function `./bin/P01_LoadRawMut.m`, the raw data can be loaded into Matlab Workspace.
+Here we have provided raw data of TCGA somatic mutations of two cancer types, breast cancers (BRCA) [2] and bladder cancers (BLCA) [3], downloaded from cBioPortal [1], which are located at:
+* `./cBioPortal_RawData/brca_tcga_pub/data_mutations_extended.txt` and
+* `./cBioPortal_RawData/blca_tcga_pub/data_mutations_extended.txt`.
+Through the script `./GenerateInputData.m` with function `./bin/P01_LoadRawMut.m`, the raw data can be loaded into Matlab Workspace.
 
 ### 2. Generating input data
 
