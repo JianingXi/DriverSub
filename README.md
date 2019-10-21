@@ -4,13 +4,17 @@ Inferring subgroup specific driver genes from heterogeneous cancer samples via s
 
 ![image](https://github.com/JianingXi/DriverSub/blob/master/bin/splash.jpg)
 
-Developer: Jianing Xi <xjn@mail.ustc.edu.cn>
+Developer: Jianing Xi <xjn@nwpu.edu.cn>
 
 School of Mechanical Engineering and Center for OPTical IMagery Analysis and Learning (OPTIMAL),
 
 Northwestern Polytechnical University, China
 
 ## Instructions to DriverSub (version 1.0.0)
+
+Citing this work
+------------------------
+Jianing Xi, Xiguo Yuan, Minghui Wang, Ao Li, Xuelong Li, Qinghua Huang, Inferring subgroup specific driver genes from heterogeneous cancer samples via subspace learning with subgroup indication, Bioinformatics, , btz793, https://doi.org/10.1093/bioinformatics/btz793
 
 Requirement
 ------------------------
