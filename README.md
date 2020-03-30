@@ -14,7 +14,7 @@ Northwestern Polytechnical University, China
 
 Citing this work
 ------------------------
-Jianing Xi, Xiguo Yuan, Minghui Wang, Ao Li, Xuelong Li, Qinghua Huang, Inferring subgroup specific driver genes from heterogeneous cancer samples via subspace learning with subgroup indication, Bioinformatics, , btz793, https://doi.org/10.1093/bioinformatics/btz793
+Jianing Xi, Xiguo Yuan, Minghui Wang, Ao Li, Xuelong Li, Qinghua Huang, Inferring subgroup specific driver genes from heterogeneous cancer samples via subspace learning with subgroup indication, *Bioinformatics*, Volume 36, Issue 6, 15 March 2020, Pages 1855–1863,  https://doi.org/10.1093/bioinformatics/btz793
 
 Requirement
 ------------------------
