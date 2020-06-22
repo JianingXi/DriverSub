@@ -1,7 +1,8 @@
 % select dateset from brca and blca
+input_data_option = {'D01_brca','D02_blca'};
+
 for i_cancer = 1:2
-    input_data_option = {'D01_brca','D02_blca'};
-    DirIn = ['./InputData/' input_data_option{select_data} '.mat'];
+    DirIn = ['./InputData/' input_data_option{i_cancer} '.mat'];
     load(DirIn);
 
     % parameter settings
