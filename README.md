@@ -6,7 +6,7 @@ Inferring subgroup specific driver genes from heterogeneous cancer samples via s
 
 Developer: Jianing Xi <xjn@nwpu.edu.cn>
 
-School of Mechanical Engineering and Center for OPTical IMagery Analysis and Learning (OPTIMAL),
+Center for OPTical IMagery Analysis and Learning (OPTIMAL),
 
 Northwestern Polytechnical University, China
 
